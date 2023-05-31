@@ -128,7 +128,7 @@ if (!isset($_SESSION['uemail'])) {
                                                 <?php echo $row['14']; ?>
                                             </span>
                                             <div class="price mt-3">
-                                                <span class="text-primary">$&nbsp;
+                                                <span class="text-primary"> Tsh &nbsp;
                                                     <?php echo $row['13']; ?>
                                                 </span>
                                             </div>

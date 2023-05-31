@@ -13,7 +13,12 @@ if (isset($_REQUEST['login'])) {
         $result = mysqli_query($con, $sql);
         $row = mysqli_fetch_array($result);
 
-        if ($row['utype'] == 'agent') {
+        if ($row['utype'] == 'admin') {
+            $_SESSION['uid'] = $row['uid'];
+            $_SESSION['uemail'] = $email;
+            header("location: Agent/index.php");
+        }
+        elseif ($row['utype'] == 'agent') {
             $_SESSION['uid'] = $row['uid'];
             $_SESSION['uemail'] = $email;
             header("location: Agent/index.php");

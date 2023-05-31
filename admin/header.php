@@ -94,7 +94,7 @@ if (!isset($_SESSION['auser'])) {
 					<a href="#"><i class="fe fe-user"></i> <span> Authentication </span> <span
 							class="menu-arrow"></span></a>
 					<ul style="display: none;">
-						<li><a href="index.php"> Login </a></li>
+						<!-- <li><a href="index.php"> Login </a></li> -->
 						<li><a href="register.php"> Register </a></li>
 
 					</ul>
@@ -130,10 +130,10 @@ if (!isset($_SESSION['auser'])) {
 				</li>
 
 				<li class="submenu">
-					<a href="#"><i class="fe fe-user"></i> <span>State & City</span> <span
+					<a href="#"><i class="fe fe-user"></i> <span>State | Country & City</span> <span
 							class="menu-arrow"></span></a>
 					<ul style="display: none;">
-						<li><a href="stateadd.php"> State </a></li>
+						<li><a href="stateadd.php"> State | Country </a></li>
 						<li><a href="cityadd.php"> City </a></li>
 					</ul>
 				</li>
