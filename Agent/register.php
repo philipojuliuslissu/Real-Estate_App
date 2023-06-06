@@ -24,11 +24,11 @@ if (isset($_REQUEST['reg'])) {
 
 			$sql = "INSERT INTO user (uname,uemail,uphone,upass,utype,uimage) VALUES ('$name','$email','$phone','$pass','$utype','$uimage')";
 			$result = mysqli_query($con, $sql);
-			move_uploaded_file($temp_name1, "admin/user/$uimage");
+			move_uploaded_file($temp_name1, "images/user/$uimage");
 			if ($result) {
-				$msg = "<p class='alert alert-success'>Register Successfully</p> ";
+				$msg = "<p class='alert alert-success'>Registered Successfully</p> ";
 			} else {
-				$error = "<p class='alert alert-warning'>Register Not Successfully</p> ";
+				$error = "<p class='alert alert-warning'>Registration Not Successfully</p> ";
 			}
 		} else {
 			$error = "<p class='alert alert-warning'>Please Fill all the fields</p>";
@@ -141,15 +141,11 @@ if (isset($_REQUEST['reg'])) {
 												placeholder="Your Phone*" maxlength="10">
 										</div>
 										<div class="form-group">
-											<input type="text" name="pass" class="form-control"
+											<input type="password" name="pass" class="form-control"
 												placeholder="Your Password*">
 										</div>
 
-										<div class="form-check-inline">
-											<label class="form-check-label">
-												<input type="radio" class="form-check-input" name="utype" value="user"
-													checked>User
-											</label>
+								
 										</div>
 										<div class="form-check-inline">
 											<label class="form-check-label">
