@@ -3,7 +3,9 @@ ini_set('session.cache_limiter', 'public');
 session_cache_limiter(false);
 session_start();
 include("config.php");
-
+if (!isset($_SESSION['uemail'])) {
+	header("location:login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -183,7 +185,7 @@ include("config.php");
                                 
                                         <div class="col-md-6 col-lg-4">
                                             <div class="featured-thumb hover-zoomer mb-4">
-                                                <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18']; ?>" alt="pimage">
+                                                <div class="overlay-black overflow-hidden position-relative"> <img src="property/<?php echo $row['18']; ?>" alt="pimage">
                                                     <div class="featured bg-primary text-white">New</div>
                                                     <div class="sale bg-secondary text-white text-capitalize">For <?php echo $row['5']; ?></div>
                                                     <div class="price text-primary"><b> Tsh<?php echo $row['13']; ?> </b><span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>

@@ -119,7 +119,7 @@ if (!isset($_SESSION['uemail'])) {
                                 ?>
                                 <tr>
                                     <td>
-                                        <img src="admin/property/<?php echo $row['18']; ?>" alt="pimage">
+                                        <img src="property/<?php echo $row['18']; ?>" alt="pimage">
                                         <div class="property-info d-table">
                                             <h5 class="text-secondary text-capitalize"><a
                                                     href="propertydetail.php?pid=<?php echo $row['0']; ?>"><?php echo $row['1']; ?></a></h5>

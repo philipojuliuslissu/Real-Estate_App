@@ -112,7 +112,7 @@ include("config.php");
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="admin/property/<?php echo $row['19']; ?>" class="ls-bg" alt="" />
+                                                    src="property/<?php echo $row['19']; ?>" class="ls-bg" alt="" />
                                             </div>
 
                                             <!-- Slide 3-->
@@ -142,6 +142,7 @@ include("config.php");
                                     <div class="col-md-6">
                                         <div class="bg-primary d-table px-3 py-2 rounded text-white text-capitalize">For
                                             <?php echo $row['5']; ?>
+                                            <a href="process.php?product=<?php echo $data['id']; ?>" class="btn btn-success"></a>
                                         </div>
                                         <h5 class="mt-2 text-secondary text-capitalize">
                                             <?php echo $row['1']; ?>
@@ -384,7 +385,7 @@ include("config.php");
                                 <label class="sr-only">Property Amount</label>
                                 <div class="input-group mb-2 mr-sm-2">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">$</div>
+                                        <div class="input-group-text">Tsh</div>
                                     </div>
                                     <input type="text" class="form-control" name="amount" placeholder="Property Price">
                                 </div>

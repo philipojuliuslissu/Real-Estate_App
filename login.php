@@ -16,12 +16,12 @@ if (isset($_REQUEST['login'])) {
         if ($row['utype'] == 'admin') {
             $_SESSION['uid'] = $row['uid'];
             $_SESSION['uemail'] = $email;
-            header("location: Agent/index.php");
+            header("location: admin/index.php");
         }
         elseif ($row['utype'] == 'agent') {
             $_SESSION['uid'] = $row['uid'];
             $_SESSION['uemail'] = $email;
-            header("location: Agent/index.php");
+            header("location: agent/index.php");
         }
         elseif($row) {
             $_SESSION['uid'] = $row['uid'];

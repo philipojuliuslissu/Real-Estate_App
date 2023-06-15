@@ -191,7 +191,7 @@ include("config.php");
                                     <label class="sr-only">Property Amount</label>
                                     <div class="input-group mb-2 mr-sm-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text">$</div>
+                                            <div class="input-group-text">Tsh</div>
                                         </div>
                                         <input type="text" class="form-control" name="amount"
                                             placeholder="Property Price">

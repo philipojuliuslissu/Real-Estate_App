@@ -105,7 +105,7 @@ include("config.php");
                                     <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
                                         
                                         <div class="sale bg-secondary text-white">For <?php echo $row['5'];?></div>
-                                        <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
+                                        <div class="price text-primary text-capitalize">Tsh<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
                                         
                                     </div>
                                     <div class="featured-thumb-data shadow-one">
@@ -147,7 +147,7 @@ include("config.php");
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">$</div>
+                                    <div class="input-group-text">Tsh</div>
                                 </div>
                                 <input type="text" class="form-control" name="amount" placeholder="Property Price">
                             </div>
