@@ -140,9 +140,16 @@ include("config.php");
                                 </div>
                                 <div class="row mb-4">
                                     <div class="col-md-6">
-                                        <div class="bg-primary d-table px-3 py-2 rounded text-white text-capitalize">For
-                                            <?php echo $row['5']; ?>
-                                        </div>
+
+                                    <!-- add onclick event to move to the sendRequest page -->
+                                    <a href="sendRequest.php" class="text-decoration-none">
+    <div class="bg-primary d-table px-3 py-2 rounded text-white text-capitalize">
+        For <?php echo $row['5']; ?>
+    </div>
+</a>
+
+
+                                        <!-- end of the onclick event -->
                                         <h5 class="mt-2 text-secondary text-capitalize">
                                             <?php echo $row['1']; ?>
                                         </h5>
