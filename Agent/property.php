@@ -98,7 +98,7 @@ include("config.php");
 									
                             <div class="col-md-6">
                                 <div class="featured-thumb hover-zoomer mb-4">
-                                    <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                    <div class="overlay-black overflow-hidden position-relative"> <img src="property/<?php echo $row['18'];?>" alt="pimage">
                                         
                                         <div class="sale bg-secondary text-white">For <?php echo $row['5'];?>
                                         
@@ -168,7 +168,7 @@ include("config.php");
                         </div>
                         
                         <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Property Add</h4>
+                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Property </h4>
                             <ul class="property_list_widget">
 							
 								<?php 

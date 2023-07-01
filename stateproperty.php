@@ -170,7 +170,7 @@ include("config.php");
                         </div>
                         
                         <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Property Add</h4>
+                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recent Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 

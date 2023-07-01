@@ -55,25 +55,25 @@ if (isset($_POST['add'])) {
 	$temp_name6 = $_FILES['fimage1']['tmp_name'];
 	$temp_name7 = $_FILES['fimage2']['tmp_name'];
 
-	move_uploaded_file($temp_name, "property/$aimage");
-	move_uploaded_file($temp_name1, "property/$aimage1");
-	move_uploaded_file($temp_name2, "property/$aimage2");
-	move_uploaded_file($temp_name3, "property/$aimage3");
-	move_uploaded_file($temp_name4, "property/$aimage4");
+	move_uploaded_file($temp_name, "/property/$aimage");
+	move_uploaded_file($temp_name1, "/property/$aimage1");
+	move_uploaded_file($temp_name2, "/property/$aimage2");
+	move_uploaded_file($temp_name3, "/property/$aimage3");
+	move_uploaded_file($temp_name4, "/property/$aimage4");
 
-	move_uploaded_file($temp_name5, "property/$fimage");
-	move_uploaded_file($temp_name6, "property/$fimage1");
-	move_uploaded_file($temp_name7, "property/$fimage2");
+	move_uploaded_file($temp_name5, "/property/$fimage");
+	move_uploaded_file($temp_name6, "/property/$fimage1");
+	move_uploaded_file($temp_name7, "/property/$fimage2");
 
-	$sql = "INSERT INTO property (pid, title, pcontent, type, bhk, stype, bedroom, bathroom, balcony, kitchen, hall, floor, size, price, location, city, state, feature, pimage, pimage1, pimage2, pimage3, pimage4, uid, status, mapimage, topmapimage, groundmapimage, totalfloor, date) 
-	VALUE('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
+	$sql = "insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor)
+	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
 	'$loc','$city','$state','$feature','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$uid','$status','$fimage','$fimage1','$fimage2','$totalfloor')";
 	$result = mysqli_query($con, $sql);
 	if ($result) {
 		$msg = "<p class='alert alert-success'>Property Inserted Successfully</p>";
 
 	} else {
-		$error = "<p class='alert alert-warning'>Error!! Property Not Inserted</p>";
+		$error = "<p class='alert alert-warning'>Property Not Inserted Some Error</p>";
 	}
 }
 ?>
@@ -110,7 +110,7 @@ if (isset($_POST['add'])) {
 
 	<!--	Title
 	=========================================================-->
-	<title> Real Estate Application</title>
+	<title>Real Estate Application</title>
 </head>
 
 <body>
@@ -165,7 +165,7 @@ if (isset($_POST['add'])) {
 						</div>
 					</div>
 					<div class="row p-5 bg-white">
-						<form method="POST" enctype="multipart/form-data">
+						<form method="post" enctype="multipart/form-data">
 							<div class="description">
 								<h5 class="text-secondary">Basic Information</h5>
 								<hr>
@@ -197,8 +197,8 @@ if (isset($_POST['add'])) {
 												<select class="form-control" required name="ptype">
 													<option value="">Select Type</option>
 													<option value="appartment">Appartment</option>
-													<option value="flat">Flat</option>
-													<option value="bunglow">Bunglow</option>
+													
+													
 													<option value="house">House</option>
 													<option value="villa">Villa</option>
 													<option value="office">Office</option>
@@ -382,7 +382,7 @@ if (isset($_POST['add'])) {
 													<div class="col-md-4">
 														<ul>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">3rd Party : </span>No</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Elevator : </span>Yes</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Alivator : </span>Yes</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">CCTV : </span>Yes</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Water Supply : </span>Ground Water / Tank</li>
 														</ul>
