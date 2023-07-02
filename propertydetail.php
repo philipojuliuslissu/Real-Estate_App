@@ -142,11 +142,11 @@ include("config.php");
                                     <div class="col-md-6">
 
                                     <!-- add onclick event to move to the sendRequest page -->
-                                    <a href="sendRequest.php" class="text-decoration-none">
-    <div class="bg-primary d-table px-3 py-2 rounded text-white text-capitalize">
-        For <?php echo $row['5']; ?>
-    </div>
-</a>
+                                    <a href="sendRequest.php?pid=<?php echo $row['0']; ?>"<?php echo $row['1']; ?> class="text-decoration-none">
+                                            <div class="bg-primary d-table px-3 py-2 rounded text-white text-capitalize">
+                                                For <?php echo $row['5']; ?>
+                                            </div>
+                                    </a>
 
 
                                         <!-- end of the onclick event -->

@@ -16,7 +16,7 @@ include("config.php");
 
     <!-- Meta Tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Homex template">
+    <meta name="description" content=" Real Estate Application">
     <meta name="keywords" content="">
     <meta name="author" content="Unicoder">
     <link rel="shortcut icon" href="images/log1.png">
@@ -59,13 +59,13 @@ include("config.php");
 
 <body>
     <!-- Page Loader -->
-    <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
+    <!-- <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
         <div class="d-flex justify-content-center y-middle position-relative">
             <div class="spinner-border" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="page-wrapper">
         <div class="row">
@@ -74,9 +74,10 @@ include("config.php");
             <!-- Header end -->
 
 
-            <!-- Banner -->            
-            <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg'); height: 100px;">
-    <!-- <div class="container">
+            <!-- Banner -->
+            <div class="banner-full-row page-banner"
+                style="background-image:url('images/breadcromb.jpg'); height: 100px;">
+                <!-- <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Send Request</b></h2>
@@ -89,22 +90,22 @@ include("config.php");
             </div>
         </div>
     </div> -->
-    <div class="container">
-    <div class="row">
-        <div class="col-md-12 d-flex justify-content-center align-items-center">
-            <h2 class="page-name text-white text-uppercase mt-1 mb-0"><b>Send Request</b></h2>
-        </div>
-    </div>
-</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                            <h2 class="page-name text-white text-uppercase mt-1 mb-0"><b>Send Request</b></h2>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+            </div>
 
-            
+
 
             <div class="form-container">
-            <form method="post" action="submitRequest.php" >
+                <form method="post" action="submitRequest.php">
 
-                <!-- <form method="post" action=""> -->
+                    <!-- <form method="post" action=""> -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -118,14 +119,23 @@ include("config.php");
                         </div> -->
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Phonenumber" name="phone_number">
+                                <input type="text" class="form-control" placeholder="Enter Phonenumber"
+                                    name="phone_number">
                             </div>
                         </div>
-                        <!-- <div class="col-md-12">
+
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" name="rmessage" placeholder="Enter Message"
+                                required></textarea>
+                        </div>
+                        </div>
+
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Enter Message"></textarea>
+                                <input type="text" class="form-control" name="title" placeholder="Select Property" value="<?php echo $title; ?>">
                             </div>
-                        </div> -->
+                        </div>
 
                         <div class="col-md-12">
                             <div class="form-group mt-4">
@@ -141,7 +151,8 @@ include("config.php");
             <!-- Footer end -->
 
             <!-- Scroll to top -->
-            <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a>
+            <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i
+                    class="fas fa-angle-up"></i></a>
             <!-- Scroll to top -->
         </div>
     </div>

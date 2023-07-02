@@ -270,9 +270,19 @@ INSERT INTO `user` (`uid`, `uname`, `uemail`, `uphone`, `upass`, `utype`, `uimag
 (24, 'some', 'some@gmail.com', '9689698697', 'some', 'builder', '3.jpg'),
 (25, 'test', 'test12@gmail.com', '9798678969', 'test', 'builder', 'avatar-3.jpg');
 
+
 --
--- Indexes for dumped tables
+-- Table structure for table `request`
 --
+
+DROP TABLE IF EXISTS `request`;
+CREATE TABLE `request` (
+`rid` INT(11) NOT NULL AUTO_INCREMENT, 
+`fullname` VARCHAR(50) NOT NULL , 
+`phonenumbe` VARCHAR(50) NOT NULL , 
+`rmessage` VARCHAR(50) NOT NULL , 
+`title` VARCHAR(50) NOT NULL, 
+PRIMARY KEY(rid) ) ENGINE = InnoDB;
 
 --
 -- Indexes for table `about`

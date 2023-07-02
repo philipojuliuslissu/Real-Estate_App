@@ -19,7 +19,7 @@ include("config.php");
     <meta name="description" content="Homex template">
     <meta name="keywords" content="">
     <meta name="author" content="Unicoder">
-    <link rel="shortcut icon" href="images/log1.png">
+    <link rel="shortcut icon" href="images/icon.ico">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
@@ -74,28 +74,31 @@ include("config.php");
             <!-- Header end -->
 
 
-            <!-- Banner -->            
-            <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg'); height: 100px;">
-    
-    <div class="container">
-    <div class="row">
-        <div class="col-md-12 d-flex justify-content-center align-items-center">
-            <h2 class="page-name text-white text-uppercase mt-1 mb-0"><b>Request Sent Successfully</b></h2>
-        </div>
-    </div>
-</div>
+            <!-- Banner -->
+            <div class="banner-full-row page-banner"
+                style="background-image:url('images/breadcromb.jpg'); height: 100px;">
 
-</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                            <h2 class="page-name text-white text-uppercase mt-1 mb-0"><b>Request Sent Successfully</b>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
 
-            
+            </div>
 
-            
+
+
+
             <!-- Footer start -->
             <?php include("include/footer.php"); ?>
             <!-- Footer end -->
 
             <!-- Scroll to top -->
-            <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a>
+            <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i
+                    class="fas fa-angle-up"></i></a>
             <!-- Scroll to top -->
         </div>
     </div>

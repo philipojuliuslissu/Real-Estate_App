@@ -110,7 +110,7 @@ if (isset($_POST['add'])) {
 
 	<!--	Title
 	=========================================================-->
-	<title>Homex - Real Estate Template</title>
+	<title>Real Estate Application</title>
 </head>
 
 <body>

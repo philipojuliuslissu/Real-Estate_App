@@ -25,10 +25,10 @@ $dataProperties = mysqli_fetch_assoc($resultProperties);
 $totalProperties = $dataProperties['totalProperties'];
 
 // Fetch the number of properties
-$queryRent = "SELECT COUNT(pid) AS totalRent FROM property WHERE stype = 'rent'";
+$queryRent = "SELECT COUNT(rid) AS requestRent FROM request";
 $resultRent = mysqli_query($con, $queryRent);
 $dataRent = mysqli_fetch_assoc($resultRent);
-$totalRent = $dataRent['totalRent'];
+$requestRent = $dataRent['requestRent'];
 
 // Fetch the number of agents
 $queryAgents = "SELECT COUNT(uid) AS totalAgents FROM user 	WHERE utype = 'agent'";
@@ -130,9 +130,9 @@ $totalAgents = $dataAgents['totalAgents'];
 							</div>
 							<div class="dash-widget-info">
 
-								<h3><?php echo $totalRent; ?></h3>
+								<h3><?php echo $requestRent; ?></h3>
 
-								<h6 class="text-muted">Request To Rent</h6>
+								<h6 class="text-muted">Requests To Rent</h6>
 								<div class="progress progress-sm">
 									<div class="progress-bar bg-primary w-50"></div>
 								</div>	
