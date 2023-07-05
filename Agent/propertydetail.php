@@ -19,7 +19,7 @@ include("config.php");
     <meta name="description" content="Homex template">
     <meta name="keywords" content="">
     <meta name="author" content="Unicoder">
-    <link rel="shortcut icon" href="images/log1.png">
+    <link rel="shortcut icon" href="images/logo/log1.png">
 
     <!--	Fonts
     ========================================================-->
@@ -105,35 +105,35 @@ include("config.php");
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="admin/property/<?php echo $row['18']; ?>" class="ls-bg" alt="" />
+                                                    src="../admin/property/<?php echo $row['18']; ?>" class="ls-bg" alt="" />
                                             </div>
 
                                             <!-- Slide 2-->
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="property/<?php echo $row['19']; ?>" class="ls-bg" alt="" />
+                                                    src="../admin/property/<?php echo $row['19']; ?>" class="ls-bg" alt="" />
                                             </div>
 
                                             <!-- Slide 3-->
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="admin/property/<?php echo $row['20']; ?>" class="ls-bg" alt="" />
+                                                    src="../admin/property/<?php echo $row['20']; ?>" class="ls-bg" alt="" />
                                             </div>
 
                                             <!-- Slide 4-->
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="admin/property/<?php echo $row['21']; ?>" class="ls-bg" alt="" />
+                                                    src="../admin/property/<?php echo $row['21']; ?>" class="ls-bg" alt="" />
                                             </div>
 
                                             <!-- Slide 5-->
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="admin/property/<?php echo $row['22']; ?>" class="ls-bg" alt="" />
+                                                    src="../admin/property/<?php echo $row['22']; ?>" class="ls-bg" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -238,7 +238,7 @@ include("config.php");
                                             aria-expanded="true" aria-controls="collapseOne"> Floor Plans </button>
                                         <div id="collapseOne" class="collapse show p-4" aria-labelledby="headingOne"
                                             data-parent="#accordionExample">
-                                            <img src="/property/<?php echo $row['25']; ?>" alt="Not Available">
+                                            <img src="property/<?php echo $row['25']; ?>" alt="Not Available">
                                         </div>
                                         <button
                                             class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed"
@@ -254,7 +254,7 @@ include("config.php");
                                             aria-expanded="false" aria-controls="collapseThree">Ground Floor</button>
                                         <div id="collapseThree" class="collapse p-4" aria-labelledby="headingThree"
                                             data-parent="#accordionExample">
-                                            <img src="property/<?php echo $row['27']; ?>" alt="Not Available">
+                                            <img src="/property<?php echo $row['27']; ?>" alt="Not Available">
                                         </div>
                                     </div>
 

@@ -24,9 +24,12 @@ if (isset($_REQUEST['reg'])) {
 
 			$sql = "INSERT INTO user (uname,uemail,uphone,upass,utype,uimage) VALUES ('$name','$email','$phone','$pass','$utype','$uimage')";
 			$result = mysqli_query($con, $sql);
-			move_uploaded_file($temp_name1, "images/user/$uimage");
+			move_uploaded_file($temp_name1, "/images/user/$uimage");
 			if ($result) {
 				$msg = "<p class='alert alert-success'>Registered Successfully</p> ";
+				$_SESSION['uid'] = $row['uid'];
+            	$_SESSION['uemail'] = $email;
+           		header("location: login.php");
 			} else {
 				$error = "<p class='alert alert-warning'>Registration Not Successfully</p> ";
 			}
@@ -104,7 +107,7 @@ if (isset($_REQUEST['reg'])) {
 						<div class="col-md-6">
 							<nav aria-label="breadcrumb" class="float-left float-md-right">
 								<ol class="breadcrumb bg-transparent m-0 p-0">
-									<li class="breadcrumb-item text-white"><a href="#">Home</a></li>
+									<li class="breadcrumb-item text-white"><a href="index.php">Home</a></li>
 									<li class="breadcrumb-item active">Register</li>
 								</ol>
 							</nav>
@@ -123,7 +126,7 @@ if (isset($_REQUEST['reg'])) {
 							<div class="login-right">
 								<div class="login-right-wrap">
 									<h1>Register</h1>
-									<p class="account-subtitle">Access to our dashboard</p>
+									<p class="account-subtitle">Access our dashboard</p>
 									<?php echo $error; ?>
 									<?php echo $msg; ?>
 									<!-- Form -->
@@ -145,22 +148,15 @@ if (isset($_REQUEST['reg'])) {
 												placeholder="Your Password*">
 										</div>
 
-								
-										</div>
 										<div class="form-check-inline">
 											<label class="form-check-label">
-												<input type="radio" class="form-check-input" name="utype"
-													value="agent">Agent
+												<input type="radio" class="form-check-input" name="utype" value="agent"
+													checked>Agent
 											</label>
 										</div>
-										<!-- <div class="form-check-inline disabled">
-									  <label class="form-check-label">
-										<input type="radio" class="form-check-input" name="utype" value="builder">Builder
-									  </label>
-									</div>  -->
-
+										
 										<div class="form-group">
-											<label class="col-form-label"><b>User Image</b></label>
+											<label class="col-form-label"><b>Agent Image</b></label>
 											<input class="form-control" name="uimage" type="file">
 										</div>
 

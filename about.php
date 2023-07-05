@@ -36,7 +36,7 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Title -->
-<title>Real Estste App</title>
+<title>Real Estate Application</title>
 </head>
 <body>
 

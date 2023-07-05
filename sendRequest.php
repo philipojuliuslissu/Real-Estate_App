@@ -100,7 +100,12 @@ include("config.php");
 
             </div>
 
-
+            <?php
+            $pid = $_GET['pid'];
+            $sql = "SELECT title FROM property WHERE pid = {$pid}";
+            $result = mysqli_query($con, $sql);
+            $title = mysqli_fetch_array($result);
+            ?>
 
             <div class="form-container">
                 <form method="post" action="submitRequest.php">

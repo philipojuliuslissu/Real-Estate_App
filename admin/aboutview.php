@@ -13,7 +13,7 @@ if (!isset($_SESSION['auser'])) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	<title>Real Estate App | About</title>
+	<title>Real Estate Application | About</title>
 
 	<!-- icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
@@ -67,7 +67,7 @@ if (!isset($_SESSION['auser'])) {
 				<div class="col-sm-12">
 					<div class="card">
 						<div class="card-header">
-							<h4 class="card-title">List Of About</h4>
+							<h4 class="card-title">About US</h4>
 							<?php
 							if (isset($_GET['msg']))
 								echo $_GET['msg'];

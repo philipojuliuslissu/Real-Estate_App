@@ -13,7 +13,7 @@ if (!isset($_SESSION['auser'])) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	<title>Real Estate App | Admin</title>
+	<title>Real Estate Application | Admin</title>
 
 	<!-- icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
@@ -118,7 +118,7 @@ if (!isset($_SESSION['auser'])) {
 											<td>
 												<?php echo $row['5']; ?>
 											</td>
-											<td><img src="user/<?php echo $row['6']; ?>" height="50px" width="50px"></td>
+											<td><img src="../images/user/<?php echo $row['6']; ?>" height="50px" width="50px"></td>
 											<td><a href="useragentdelete.php?id=<?php echo $row['0']; ?>">Delete</a></td>
 										</tr>
 										<?php

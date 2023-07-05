@@ -91,7 +91,7 @@ if (!isset($_SESSION['uemail'])) {
                 <div class="container">
                     <div class="row mb-5">
                         <div class="col-lg-12">
-                            <h2 class="text-secondary double-down-line text-center">User Listed Property</h2>
+                            <h2 class="text-secondary double-down-line text-center">My Properties</h2>
                             <?php
                             if (isset($_GET['msg']))
                                 echo $_GET['msg'];
@@ -128,7 +128,7 @@ if (!isset($_SESSION['uemail'])) {
                                                 <?php echo $row['14']; ?>
                                             </span>
                                             <div class="price mt-3">
-                                                <span class="text-primary">$&nbsp;
+                                                <span class="text-primary">Tsh&nbsp;
                                                     <?php echo $row['13']; ?>
                                                 </span>
                                             </div>

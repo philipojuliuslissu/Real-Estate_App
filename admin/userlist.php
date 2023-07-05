@@ -118,7 +118,7 @@ if (!isset($_SESSION['auser'])) {
 											<td>
 												<?php echo $row['5']; ?>
 											</td>
-											<td><img src="user/<?php echo $row['6']; ?>" height="50px" width="50px"></td>
+											<td><img src="../images/user/<?php echo $row['6']; ?>" height="50px" width="50px"></td>
 											<td><a href="userdelete.php?id=<?php echo $row['0']; ?>">Delete</a></td>
 										</tr>
 										<?php

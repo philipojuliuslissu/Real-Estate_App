@@ -20,7 +20,7 @@ if (isset($_POST['addabout'])) {
 
 	move_uploaded_file($temp_name1, "upload/$aimage");
 
-	$sql = "insert into about (title,content,image) values('$title','$content','$aimage')";
+	$sql = "INSERT INTO about (title,content,image) values('$title','$content','$aimage')";
 	$result = mysqli_query($con, $sql);
 	if ($result) {
 		$msg = "<p class='alert alert-success'>Inserted Successfully</p>";
@@ -37,7 +37,7 @@ if (isset($_POST['addabout'])) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	<title>Real Estate App | About</title>
+	<title>Real Estate Application | About</title>
 
 	<!-- icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
@@ -125,7 +125,7 @@ if (isset($_POST['addabout'])) {
 									</div>
 								</div>
 								<div class="text-left">
-									<input type="submit" class="btn btn-primary" value="Submit" name="addabout"
+									<input type="submit" class="btn btn-primary" value="Update" name="addabout"
 										style="margin-left:200px;">
 								</div>
 						</form>

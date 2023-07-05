@@ -92,8 +92,8 @@ if (isset($_POST['login'])) {
 							</div>
 							<!-- /Social Login -->
 
-							<div class="text-center dont-have">Don't have an account? <a
-									href="register.php">Register</a></div>
+							<!-- <div class="text-center dont-have">Don't have an account? <a
+									href="register.php">Register</a></div> -->
 
 						</div>
 					</div>

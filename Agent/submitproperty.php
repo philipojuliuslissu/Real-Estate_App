@@ -55,15 +55,15 @@ if (isset($_POST['add'])) {
 	$temp_name6 = $_FILES['fimage1']['tmp_name'];
 	$temp_name7 = $_FILES['fimage2']['tmp_name'];
 
-	move_uploaded_file($temp_name, "/property/$aimage");
-	move_uploaded_file($temp_name1, "/property/$aimage1");
-	move_uploaded_file($temp_name2, "/property/$aimage2");
-	move_uploaded_file($temp_name3, "/property/$aimage3");
-	move_uploaded_file($temp_name4, "/property/$aimage4");
+	move_uploaded_file($temp_name, "Agent/property/$aimage");
+	move_uploaded_file($temp_name1, "Agent/property/$aimage1");
+	move_uploaded_file($temp_name2, "Agent/property/$aimage2");
+	move_uploaded_file($temp_name3, "Agent/property/$aimage3");
+	move_uploaded_file($temp_name4, "Agent/property/$aimage4");
 
-	move_uploaded_file($temp_name5, "/property/$fimage");
-	move_uploaded_file($temp_name6, "/property/$fimage1");
-	move_uploaded_file($temp_name7, "/property/$fimage2");
+	move_uploaded_file($temp_name5, "Agent/property/$fimage");
+	move_uploaded_file($temp_name6, "Agent/property/$fimage1");
+	move_uploaded_file($temp_name7, "Agent/property/$fimage2");
 
 	$sql = "insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor)
 	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
@@ -139,7 +139,7 @@ if (isset($_POST['add'])) {
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Submit Property</b>
+							<h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Add Property</b>
 							</h2>
 						</div>
 						<div class="col-md-6">
@@ -161,7 +161,7 @@ if (isset($_POST['add'])) {
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">Submit Property</h2>
+							<h2 class="text-secondary double-down-line text-center">Add Property</h2>
 						</div>
 					</div>
 					<div class="row p-5 bg-white">
@@ -182,7 +182,7 @@ if (isset($_POST['add'])) {
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label">Content</label>
+											<label class="col-lg-2 col-form-label">Property Description</label>
 											<div class="col-lg-9">
 												<textarea class="tinymce form-control" name="content" rows="10"
 													cols="30"></textarea>

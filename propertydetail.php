@@ -3,7 +3,6 @@ ini_set('session.cache_limiter', 'public');
 session_cache_limiter(false);
 session_start();
 include("config.php");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -112,7 +111,7 @@ include("config.php");
                                             <div class="ls-slide"
                                                 data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
                                                 <img width="1920" height="1080"
-                                                    src="property/<?php echo $row['19']; ?>" class="ls-bg" alt="" />
+                                                    src="admin/property/<?php echo $row['19']; ?>" class="ls-bg" alt="" />
                                             </div>
 
                                             <!-- Slide 3-->
@@ -245,7 +244,7 @@ include("config.php");
                                             aria-expanded="true" aria-controls="collapseOne"> Floor Plans </button>
                                         <div id="collapseOne" class="collapse show p-4" aria-labelledby="headingOne"
                                             data-parent="#accordionExample">
-                                            <img src="/property/<?php echo $row['25']; ?>" alt="Not Available">
+                                            <img src="Agent/property/<?php echo $row['25']; ?>" alt="Not Available">
                                         </div>
                                         <button
                                             class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed"
@@ -253,7 +252,7 @@ include("config.php");
                                             aria-expanded="false" aria-controls="collapseTwo">Basement Floor</button>
                                         <div id="collapseTwo" class="collapse p-4" aria-labelledby="headingTwo"
                                             data-parent="#accordionExample">
-                                            <img src="property/<?php echo $row['26']; ?>" alt="Not Available">
+                                            <img src="Agent/property/<?php echo $row['26']; ?>" alt="Not Available">
                                         </div>
                                         <button
                                             class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed"
@@ -261,7 +260,7 @@ include("config.php");
                                             aria-expanded="false" aria-controls="collapseThree">Ground Floor</button>
                                         <div id="collapseThree" class="collapse p-4" aria-labelledby="headingThree"
                                             data-parent="#accordionExample">
-                                            <img src="property/<?php echo $row['27']; ?>" alt="Not Available">
+                                            <img src="Agent/property/<?php echo $row['27']; ?>" alt="Not Available">
                                         </div>
                                     </div>
 
@@ -270,7 +269,7 @@ include("config.php");
                                     <div class="agent-contact pt-60">
                                         <div class="row">
                                             <div class="col-sm-4 col-lg-3"> <img
-                                                    src="../images/user/<?php echo $row['uimage']; ?>" alt="" height="200"
+                                                    src="images/user/<?php echo $row['uimage']; ?>" alt="" height="200"
                                                     width="170"> </div>
                                             <div class="col-sm-8 col-lg-9">
                                                 <div class="agent-data text-ordinary mt-sm-20">
@@ -326,7 +325,7 @@ include("config.php");
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-12">
-                                                                    <button type="submit" id="send" value="submit"
+                                                                    <button type="submit" name="send" id="send" value="submit"
                                                                         class="btn btn-primary">Send Message</button>
                                                                 </div>
                                                             </div>
@@ -355,32 +354,32 @@ include("config.php");
                         <div class="col-lg-4">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-md-50">Send
                                 Message</h4>
-                            <form method="post" action="#">
+                            <form method="post" action="sendmessage.php">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter Name">
+                                            <input type="text" class="form-control" name = "fullname" placeholder="Enter Name">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter Email">
+                                            <input type="text" class="form-control" name="email" placeholder="Enter Email">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter Phone">
+                                            <input type="text" class="form-control" name="phoneNo" placeholder="Enter Phone">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Enter Message"></textarea>
+                                            <textarea class="form-control" name="message" placeholder="Enter Message"></textarea>
                                         </div>
                                     </div>
 
                                     <div class="col-md-12">
                                         <div class="form-group mt-4">
-                                            <button type="submit" class="btn btn-primary w-100">Search Property</button>
+                                            <button type="submit" class="btn btn-primary w-100" name="send" >Send Message</button>
                                         </div>
                                     </div>
                                 </div>

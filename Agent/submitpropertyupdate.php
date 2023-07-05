@@ -149,13 +149,13 @@ if(isset($_POST['add']))
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Submit Property</b></h2>
+                        <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Update Property</b></h2>
                     </div>
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
                                 <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Submit Property</li>
+                                <li class="breadcrumb-item active">Update Property</li>
                             </ol>
                         </nav>
                     </div>
@@ -170,7 +170,7 @@ if(isset($_POST['add']))
             <div class="container">
                     <div class="row">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">Submit Property</h2>
+							<h2 class="text-secondary double-down-line text-center">Update Property</h2>
                         </div>
 					</div>
                     <div class="row p-5 bg-white">
@@ -445,7 +445,7 @@ if(isset($_POST['add']))
 										</div>
 
 										
-											<input type="submit" value="Submit" class="btn btn-primary"name="add" style="margin-left:200px;">
+											<input type="submit" value="Update" class="btn btn-primary"name="add" style="margin-left:200px;">
 										
 									</div>
 								</form>
